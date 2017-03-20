@@ -9,13 +9,26 @@
 
 		<script>
 			// read user's number (popup window)
-			
+
+			let userNumber = prompt('Enter your guess');
+
 			// create a random number
-			
+
+			let randomNumber = `${Math.floor((Math.random() * 5) + 1)}`;
+
 			// compare the numbers
-			
+
+			let guess = (userNumber === randomNumber);
+
 			// show results (popup window)
-			
+
+            if (guess === true){
+                alert('You guessed correctly')
+            }else {
+                alert('You guessed badly')
+            }
+            console.log(userNumber);
+            console.log(randomNumber);
 		</script>
 	</body>
 </html>
