@@ -11,10 +11,18 @@
 		<script>
 			// enter your name, surname
 			// ...
-			
+			let name = prompt('Enter your name')
+			let surname = prompt('Enter your surname')
+			let age = prompt('Enter your age')
 			// display your personal data on the console
 			// ...
-			
+
+			if (name !== null && surname !== null && age !== null){
+			    console.log(`Name: ${name}\nSurname: ${surname}\nAge: ${age}`)
+			}else{
+			    console.log('Insert correct data')
+			}
+
 			// 
 		</script>
 	</body>
