@@ -7,6 +7,18 @@
 	<body>
 		<h1>Create mobile phone</h1>
 		<script>
+            var mobile = {
+                brand: 'Nokla',
+                model: 3069,
+                wifi: true,
+                contacts: [
+                    {name: 'Eva', number: 123123123}
+                ]};
+            console.log("## My phone ##");
+            console.log(`Brand: ${mobile.brand}`);
+            console.log(`Model: ${mobile.model}`);
+            console.log(`WiFi: ${mobile.wifi}`);
+            console.log(`Contacs: Name: ${mobile.contacts[0].name}, Number: ${mobile.contacts[0].number}`);
 		</script>
 	</body>
 </html>
