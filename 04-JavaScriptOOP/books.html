@@ -7,6 +7,49 @@
 	<body>
 		<h1>Display books list</h1>
 		<script>
+			let books = [];
+
+			books.push(
+			    {
+			        id: 1,
+			        title: "The Return of Duck and Goose",
+                    author: "Sir Piggy",
+                    format: "paperback",
+                    price: 19.99
+                },
+                {
+                    id: 2,
+                    title: "The Adventures of Duck and Goose",
+                    author: "D. Cow",
+                    format: "hardback",
+                    price: 18.99
+                },
+                {
+                    id: 3,
+                    title: "Firend is a Duck",
+                    author: "A. Parrot",
+                    format: "paperback",
+                    price: 14.99
+                },
+                {
+                    id: 4,
+                    title: "`Duck and Goose` Cheat Sheet for Students",
+                    author: "Polly Parrot",
+                    format: "paperback",
+                    price: 5.99
+                },
+                {
+                    id: 5,
+                    title: "`Duck and Goose`: an allegory for modern times?",
+                    author: "Bor Ing",
+                    format: "ebook",
+                    price: 59.99
+                }
+            )
+
+            for (let i = 0; i < books.length; i++){
+			    console.log(`Id: ${books[i].id}\nTitle: ${books[i].title}\nAuthor: ${books[i].author}\nFormat: ${books[i].format}\nPrice: ${books[i].price}`)
+            }
 		</script>
 	</body>
 </html>
