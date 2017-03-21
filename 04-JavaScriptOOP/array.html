@@ -9,16 +9,31 @@
 		<script>
 			var myArray = {
 					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
-					min: function(){
-						// maximum value (sort the arr and take the last value, use a built-in function)
-					},		
-					max: function(){},		// look at the min method comment
-					avg: function(){},		// avarage value
-					lth: function(val){}	// the number of arr values less than 'val'
+					min: function(array){
+						return array[0];
+					},
+					max: function(array){
+					    return array[array.length-1];
+					},
+					avg: function(array){
+                        let sum = 0;
+                        for( let i = 0; i < array.length; i++ ){
+                            sum += parseInt( array[i], 10 ); //don't forget to add the base
+                        }
+
+                        return sum/array.length;
+                    },
+					lth: function(array){
+					    return array.length;
+                    }
 			};
-			
-			// display results (min,max,avg,lth) in the console
-			// ...
+
+			let array = myArray.arr.sort((a, b) => a - b);
+
+			console.log(`Min: ${myArray.min(array)}`);
+			console.log(`Max: ${myArray.max(array)}`);
+			console.log(`Avg: ${myArray.avg(array)}`);
+			console.log(`Lth: ${myArray.lth(array)}`);
 		</script>
 	</body>
 </html>
