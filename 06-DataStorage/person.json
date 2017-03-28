@@ -1,0 +1,47 @@
+{
+  "person": {
+    "name": "meh",
+    "surname": "meeeeeeeeeeeeeeeeeeh",
+    "age": 1,
+    "gender": "1 from 63",
+    "email": "meh@meh.dotkom",
+    "phone": {
+      "landline": 48,
+      "number": 12312312312
+    },
+    "addres": {
+      "street": "uek street",
+      "homeNumber": 15,
+      "postCode": "123-23",
+      "city": "Cracow"
+    },
+    "interests": [
+      {
+        "name": "some"
+      },
+      {
+        "name": "smth else"
+      }
+    ],
+    "family": [
+      {
+        "spouse": {
+          "name": "idk",
+          "surname": ""
+        }
+      }
+    ],
+    "children": [
+      {
+        "name": "Some",
+        "surname": "Same",
+        "gender": "Politically correct",
+        "age": 40,
+        "interest": [
+          "fist",
+          "second"
+        ]
+      }
+    ]
+  }
+}
